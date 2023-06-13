@@ -10,7 +10,6 @@ let lkr = `❀° ┄──•••───╮
 ┏━━━ʕ•㉨•ʔ━━━┓
 ⎪⌲👑 _${usedPrefix}ping_
 ⎪⌲👑 _${usedPrefix}uptime_
-⎪⌲👑 _${usedPrefix}bot_
 ⎪⌲👑 _${usedPrefix}owner_
 ⎪⌲👑 _${usedPrefix}script_
 ⎪⌲👑 _${usedPrefix}runtime_
@@ -19,7 +18,7 @@ let lkr = `❀° ┄──•••───╮
 ⎪⌲👑 _${usedPrefix}groups_
 ⎪⌲👑 _${usedPrefix}blocklist_
 ⎪⌲👑 _${usedPrefix}listprem_
-⎪⌲👑    Guru
+⎪
 ┗━━━ʕ•㉨•ʔ━━━┛
 
 ❀° ┄──•••───╮
