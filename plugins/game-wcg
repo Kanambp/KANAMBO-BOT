@@ -1,5 +1,7 @@
-const { bot, wcg } = require('../lib/')
-bot(
+import wcg from '../lib/wcg.js'
+
+let handler = async (m, { conn, usedPrefix, command, text }) => {
+    conn.game = conn.game ? conn.game : {}
 	{
 		pattern: 'wcg ?(.*)',
 		fromMe: true,
