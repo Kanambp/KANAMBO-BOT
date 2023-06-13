@@ -58,7 +58,7 @@ global.fgpyp = 'https://youtube.com/'
 global.fglog = 'https://cdn.jsdelivr.net/gh/Kanambp/kanamb@main/kanambo.jpg' 
 
 
-global.wait = '*⌛ _Charging..._*\n*▰▰▰▱▱▱▱▱*'
+global.wait = '*⌛ _please wait..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
