@@ -17,7 +17,7 @@ let m2 = `
 ▢ .info
 ▢ .owner
 ▢ .donate
-▢ .gpguru
+▢ .gpkanambo
 ▢ .listprem
 ▢ .help
 ▢ .audios
@@ -219,13 +219,13 @@ let m2 = `
 ▢ $
 └───────────  
 
-Bot has more than 300 commands and i am lazy to write all
+Bot has more than 300 commands and as you know Kanambo i am lazy to write all
 `
 //const pp = await (await fetch('https://i.ibb.co/qMG1JPY/fg.jpg')).buffer()
-    let pp = './Guru.jpg' 
-    conn.sendButton(m.chat, m2, '▢ ᴳᵁᴿᵁ  ┃ ᴮᴼᵀ\n▢ Follow on Instagram\nhttps://www.instagram.com/asli_guru69\n', pp, [
+    let pp = './kanambo.jpg' 
+    conn.sendButton(m.chat, m2, '▢ KANAMBO  ┃ ᴮᴼᵀ\n▢ Follow on Instagram\nhttps://www.instagram.com/\n', pp, [
       ['⏍ Info', `${usedPrefix}botinfo`],
-      ['⌬ Groups', `${usedPrefix}gpguru`]
+      ['⌬ Groups', `${usedPrefix}gpkanambo`]
     ],m, rpyt)
    
 }
