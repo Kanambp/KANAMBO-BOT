@@ -46,6 +46,15 @@ KANAMBO-BOT- Simple Multi Device whatsapp bot.
   <br>
 <p align="center"><a href="https://demo.coolify.io/applications/cliw16yjq0003o09s05julvlg/configuration/source"> <img src="https://img.shields.io/badge/coolify%20Account-blue?style=for-the-badge&logo=coolify" width="220" height="38.45"/></a></p>
 
+#### DEPLOY TO MOGENIUS 
+
+1. If You don't have an account in Mogenius. Create a account.
+    <br>
+<p align="center"><a href="https://studio.mogenius.com/user/login"> <img src="https://img.shields.io/badge/mogenius%20Account-blue?style=for-the-badge&logo=mogenius" width="220" height="38.45"/></a></p>
+
+2. Now Deploy 
+
+
  ## 🤩 Support
 THANK YOU GUYS I WILL ADD HOW TO DEPLOY ON KOYEB AND RAILWAY SOON WAIT FOR IT.....
 
