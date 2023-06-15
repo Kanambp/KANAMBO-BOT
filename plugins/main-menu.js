@@ -34,12 +34,13 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(850) 
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
+_*Hello ${taguser} thank you for choosing KANAMBO-BOT made by Peter Kanambo enjoy over 300 commands*_
+
 ┌─•✧𝑰𝑵𝑭𝑶 𝑼𝑺𝑬𝑹✧•─┐
-┊ 👨‍💻  *𝑼𝑺𝑬𝑹:* ${taguser}
+┊ 🛑  *𝙋𝙍𝙀𝙁𝙄𝙓:* ${usedPrefix}
 ┊ 👨‍💻  *𝙉𝘼𝙈𝙀:* ${name}
 ┊ 😈  𝙊𝙒𝙉𝙀𝙍 𝙉𝘼𝙈𝙀 :${author}
 ┊ 💎  *𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎:* ${diamond}
-┊ 📱  *𝙍𝘼𝙉𝙆:* ${role}
 ┊ 🃏  *𝙀𝙓𝙋𝙀𝙍𝙄𝙀𝙉𝘾𝙀:* ${exp}
 └─── •✧✧• ────┘
 
@@ -48,16 +49,8 @@ let str = `
 ┊ ⏲️   *𝙏𝙄𝙈𝙀:* ${wib}
 └── •✧✧• ───────┘ 
 
-┌─•✧𝑩𝑶𝑻 𝑰𝑵𝑭𝑶✧•──┐
-┊ 🤖  *𝘽𝙊𝙏 𝙉𝘼𝙈𝙀:*${botname}
-┊ 👨‍💻   𝙋𝙇𝘼𝙏𝙁𝙊𝙍𝙈:Linux 
-┊ 🛑  *𝙋𝙍𝙀𝙁𝙄𝙓:* ${usedPrefix}
-┊ 🕛  *𝙐𝙋𝙏𝙄𝙈𝙀:* ${uptime} 
-┊ 💌  *𝘿𝘼𝙏𝘼𝘽𝘼𝙎𝙀:* ${rtotalreg} FROM ${totaluser}
-┊ 🗃️  *𝑻𝑶𝑻𝑨𝑳 𝑼𝑺𝑬𝑹𝑺:* ${totaluser}
-└─── •✧✧• ────┘ 
 ≻───── ⋆✩⋆ ─────≺
-✎𝙐𝙎𝙀 ${usedPrefix}list 𝑻𝑶 𝑺𝑬𝑬 𝑨𝑳𝑳 𝑼𝑺𝑨𝑩𝑳𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
+hello ${taguser} ✎𝙐𝙎𝙀 ${usedPrefix}list 𝑻𝑶 𝑺𝑬𝑬 𝑨𝑳𝑳 𝑼𝑺𝑨𝑩𝑳𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
 ≻───── ⋆✩⋆ ─────≺
 `
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
@@ -78,16 +71,16 @@ function clockString(ms) {
     function ucapan() {
       const time = moment.tz('Africa/Nairobi').format('HH')
       let res = "happy early in the day☀️"
-      if (time >= 4) {
+      if (time >= 6) {
         res = "Good Morning 🌄"
       }
-      if (time >= 10) {
+      if (time >= 12) {
         res = "Good Afternoon ☀️"
       }
-      if (time >= 15) {
-        res = "Good Afternoon 🌇"
+      if (time >= 16) {
+        res = "Good evening 🌇"
       }
-      if (time >= 18) {
+      if (time >= 21) {
         res = "Good Night 🌙"
       }
       return res
