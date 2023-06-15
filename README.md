@@ -48,7 +48,7 @@ KANAMBO-BOT- Simple Multi Device whatsapp bot.
 
 #### DEPLOY TO MOGENIUS 
 
-1. If You don't have an account in Mogenius. Create a account.
+1. If You don't have an account in Mogenius. Create a account. CLICK BELOW THE BIG ICON
     <br>
 <p align="center"><a href="https://studio.mogenius.com/user/login"> <img align="center" src="https://studio.mogenius.com/assets/logos/logo-mogenius-logo-quer.svg" alt="Fork and deploy" /></a>
   
