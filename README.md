@@ -61,30 +61,23 @@ KANAMBO-BOT- Simple Multi Device whatsapp bot.
 
 
 <p align="center">  
-  <a href="">
     <img alt="KANAMBO" height="300" src="https://telegra.ph/file/104b23921c3487546de77.jpg">
     <h1 align="center">STEP 2 </h1>
-  </a>
 </p>
+
 <p align="center">  
-  <a href="">
     <img alt="KANAMBO" height="300" src="https://telegra.ph/file/6ec6ee0d95fc6e9fe5d4f.jpg">
     <h1 align="center">STEP 3</h1>
-  </a>
 </p>
 
 <p align="center">  
-  <a href="">
     <img alt="KANAMBO" height="300" src="https://telegra.ph/file/bf3fcfd2221db9c6188b2.jpg">
     <h1 align="center">STEP 4</h1>
-  </a>
 </p>
 
 <p align="center">  
-  <a href="">
     <img alt="KANAMBO" height="300" src="https://telegra.ph/file/bf10241aa12697e0a63c6.jpg">
     <h1 align="center">STEP 5</h1>
-  </a>
 </p>
 
  ## 🤩 Support
