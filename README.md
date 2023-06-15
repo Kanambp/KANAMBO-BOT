@@ -58,7 +58,8 @@ step 1
 
 <p align="center">  
   <a href="">
-    <img alt="KANAMBO" height="300" src="https://telegra.ph/file/28d195759b1c4f4bae1a4.jpg">
+    <img alt="" height="300" src="https://telegra.ph/file/28d195759b1c4f4bae1a4.jpg">
+    <h1 align="center">STEP 1 </h1>
   </a>
 </p>
 
