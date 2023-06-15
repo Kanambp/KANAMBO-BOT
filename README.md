@@ -50,8 +50,8 @@ KANAMBO-BOT- Simple Multi Device whatsapp bot.
 
 1. If You don't have an account in Mogenius. Create a account.
     <br>
-<p align="center"><a href="https://studio.mogenius.com/user/login"> <img src="https://img.shields.io/badge/mogenius%20Account-blue?style=for-the-badge&logo=mogenius" width="220" height="38.45"/></a></p>
-
+<p align="center"><a href="https://studio.mogenius.com/user/login"> <img align="center" src="https://studio.mogenius.com/assets/logos/logo-mogenius-logo-quer.svg" alt="Fork and deploy" /></a>
+  
 2. Now Deploy 
 
 
