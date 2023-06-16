@@ -59,8 +59,8 @@ thumbnail: await(await conn.getFile(thumbnail)).data
   }
 
          // return conn.sendMessage(m.chat, doc, { quoted: m })
-return conn.sendMessage(m.chat, { document: { url: link }, mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m})
-       //return await conn.sendFile(m.chat, link, title + '.mp3', '', m, false, { asDocument: true })
+        //return conn.sendMessage(m.chat, { document: { url: link }, mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m})
+    return await conn.sendFile(m.chat, link, title + '.mp3', '', m, true, { asDocument: true })
 }
 handler.help = ['play'].map(v => v + ' <query>')
 handler.tags = ['downloader']
