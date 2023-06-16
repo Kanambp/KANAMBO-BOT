@@ -25,18 +25,18 @@ let lkr = `❀° ┄──•••───╮
      𝙊𝙒𝙉𝙀𝙍 𝙈𝙀𝙉𝙐  
 ╰───•••──┄ °❀     
 ┏━━━ʕ•㉨•ʔ━━━┓
-⎪⌲👑 _${usedPrefix}banchat_
-⎪⌲👑 _${usedPrefix}unbanchat_
-⎪⌲👑 _${usedPrefix}banuser_
-⎪⌲👑 _${usedPrefix}unbanuser_
-⎪⌲👑 _${usedPrefix}Broadcast_
-⎪⌲👑 _${usedPrefix}Broadcastgc_
-⎪⌲👑 _${usedPrefix}join_
-⎪⌲👑 _${usedPrefix}setppbot_
-⎪⌲👑 _${usedPrefix}setprefix_
-⎪⌲👑 _${usedPrefix}resetprefix_
-⎪⌲👑 _${usedPrefix}getfile_
-⎪⌲👑 _${usedPrefix}getplugin_
+⎪⌲👤 _${usedPrefix}banchat_
+⎪⌲👤 _${usedPrefix}unbanchat_
+⎪⌲👤 _${usedPrefix}banuser_
+⎪⌲👤 _${usedPrefix}unbanuser_
+⎪⌲👤 _${usedPrefix}Broadcast_
+⎪⌲👤 _${usedPrefix}Broadcastgc_
+⎪⌲👤 _${usedPrefix}join_
+⎪⌲👤 _${usedPrefix}setppbot_
+⎪⌲👤 _${usedPrefix}setprefix_
+⎪⌲👤 _${usedPrefix}resetprefix_
+⎪⌲👤 _${usedPrefix}getfile_
+⎪⌲👤 _${usedPrefix}getplugin_
 ┗━━━ʕ•㉨•ʔ━━━┛
 ${readMore}
 ❀° ┄──•••───╮
@@ -83,7 +83,7 @@ ${readMore}
 ⎪⌲💎 _${usedPrefix}spotify_
 ⎪⌲💎 _${usedPrefix}facebook <link>_
 ┗━━━ʕ•㉨•ʔ━━━┛
-
+${readMore}
 ❀° ┄──•••───╮
        𝙀𝘾𝙊𝙉𝙊𝙈𝙔 
 ╰───•••──┄ °❀     
@@ -168,20 +168,20 @@ ${readMore}
 ⎪⌲👑 _${usedPrefix}sakura_
 ⎪⌲👑 _${usedPrefix}kotori_
 ┗━━━ʕ•㉨•ʔ━━━┛
-
+${readMore}
 ❀° ┄──•••───╮
       𝙂𝘼𝙈𝙀 𝙈𝙀𝙉𝙐 
 ╰───•••──┄ °❀     
 ┏━━━ʕ•㉨•ʔ━━━┓
-⎪⌲👑 _${usedPrefix}tictactoe_
-⎪⌲👑 _${usedPrefix}delttt_
-⎪⌲👑 _${usedPrefix}math_
-⎪⌲👑 _${usedPrefix}math answer_
-⎪⌲👑 _${usedPrefix}ppt_
-⎪⌲👑 _${usedPrefix}slot_
-⎪⌲👑 _${usedPrefix}casino_
-⎪⌲👑 _${usedPrefix}yourmom_
-⎪⌲👑 _${usedPrefix}teri mummy_
+⎪⌲⚽ _${usedPrefix}tictactoe_
+⎪⌲⚽ _${usedPrefix}delttt_
+⎪⌲⚽ _${usedPrefix}math_
+⎪⌲⚽ _${usedPrefix}math answer_
+⎪⌲⚽ _${usedPrefix}ppt_
+⎪⌲⚽ _${usedPrefix}slot_
+⎪⌲⚽ _${usedPrefix}casino_
+⎪⌲⚽ _${usedPrefix}yourmom_
+⎪⌲⚽ _${usedPrefix}teri mummy_
 ┗━━━ʕ•㉨•ʔ━━━┛
 
 ❀° ┄──•••───╮
@@ -237,16 +237,16 @@ ${readMore}
     𝗡𝗦𝗙𝗪 𝗠𝗘𝗡𝗨
 ╰───•••──┄ °❀
 ┏━━━ʕ•㉨•ʔ━━━┓
-▢ .xwaifu (ⓓ)
-▢ .xneko (ⓓ)
-▢ .blowjob (ⓓ)
-▢ .ass (ⓓ)
-▢ .boobs (ⓓ)
-▢ .lesbian (ⓓ)
-▢ .pussy (ⓓ)
-▢ .pack (ⓓ)
-▢ .chut (ⓓ)
-▢ .gand (ⓓ)
+🥵 .xwaifu (ⓓ)
+🥵 .xneko (ⓓ)
+🥵 .blowjob (ⓓ)
+🥵 .ass (ⓓ)
+🥵 .boobs (ⓓ)
+🥵 .lesbian (ⓓ)
+🥵 .pussy (ⓓ)
+🥵 .pack (ⓓ)
+🥵 .chut (ⓓ)
+🥵 .gand (ⓓ)
 ╰───•••──┄ °❀`       
 conn.sendFile(m.chat, pp, 'perfil.jpg', lkr, m, false, { mentions: [who] })
 m.react(done)
