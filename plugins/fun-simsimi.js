@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) throw `Hii *${name}* want to talk? \nrespond *${usedPrefix + command}* (your message) \n\n📌 Exemplo : *${usedPrefix + command}* Hii bot`
   m.react('🗣️') 
   //let res = await fetch(global.API('https://api.simsimi.net', '/v2/', { text: encodeURIComponent(m.text), lc: "es" }, ''))
-  let res = await fetch(`https://api.simsimi.net/v2/?text=${text}&lc=en`)
+  let res = await fetch(`http://sandbox.api.simsimi.com/request.p?key=pjBhPauIVI~TiR1faRPnRU1BqY-M0XV.A5mUBy0q&lc=en&ft=1.0&text=hi`)
   let json = await res.json()
   if (json.success) m.reply(json.success.replace('simsimi', 'Guru').replace('Simsimi', 'Guru').replace('sim simi', 'Guru'))
   else throw json
