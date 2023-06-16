@@ -1,4 +1,3 @@
-
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 import yts from 'yt-search'
 var handler = async (m, { conn, command, text, usedPrefix }) => {
@@ -38,7 +37,7 @@ sourceUrl: 'http://wa.me/917605902011', thumbnail: await ( await conn.getFile(th
 })
   
   //let buttons = [{ buttonText: { displayText: '📽VIDEO' }, buttonId: `${usedPrefix}ytv ${url} 360` }]
- let msg = await conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: captvid, footer: author, buttons }, { quoted: m })
+ //let msg = await conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: captvid, footer: author, buttons }, { quoted: m })
 
   const yt = await youtubedlv2(url).catch(async _ => await youtubedl(url))
 const link = await yt.audio['128kbps'].download()
@@ -58,8 +57,8 @@ thumbnail: await(await conn.getFile(thumbnail)).data
                        }
   }
 
-   // return conn.sendMessage(m.chat, doc, { quoted: m })
-    //return conn.sendMessage(m.chat, { document: { url: link }, mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m})
+   return conn.sendMessage(m.chat, doc, { document: { url: link }, mimetype: 'audio/mpeg', fileName: `${title}.mp3`} { quoted: m })
+ // return conn.sendMessage(m.chat, doc, { document: { url: link }, mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m})
    // return await conn.sendFile(m.chat, link, title + '.mp3', '', m, true, { asDocument: true })
 }
 handler.help = ['play'].map(v => v + ' <query>')
