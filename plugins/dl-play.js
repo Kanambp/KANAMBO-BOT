@@ -40,7 +40,7 @@ sourceUrl: 'http://wa.me/917605902011', thumbnail: await ( await conn.getFile(th
  //let msg = await conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: captvid, footer: author, buttons }, { quoted: m })
 
   const yt = await youtubedlv2(url).catch(async _ => await youtubedl(url))
-const link = await yt.mp3['128kbps'].download()
+const link = await yt.mp3.download()
   let doc = { 
   mp3: 
   { 
