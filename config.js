@@ -8,11 +8,11 @@ import axios from 'axios'
 
 global.owner = [
   ['254114148625', 'KANAMBO', true],
-  [''] 
+  ['254114018035', 'FORTUNATUS', true'], 
 ] //Number of owners
 
-global.mods = ['254114148625'] 
-global.prems = ['254114148625']
+global.mods = ['254114148625', '254114018035'] 
+global.prems = ['254114148625', '254114018035']
 
 global.ai = 'API_HERE', // Get you Api-key from 'https://platform.openai.com/account/api-keys'
 global.org = 'ORG_KEY_HERE',   
