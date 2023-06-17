@@ -2,15 +2,15 @@ import fetch from "node-fetch";
 import { generateWAMessageFromContent } from "@adiwajshing/baileys";
 import fs from "fs";
 import { Configuration, OpenAIApi } from 'openai';
-
-const configuration = new Configuration({apiKey: global.ai});
+let kanambo = process.env.AI; 
+const configuration = new Configuration({apiKey: kanambo});
 const openai = new OpenAIApi(configuration);
 
 let handler = async (m, { text, usedPrefix, command }) => {
   if (!text) throw `Input a query. Example ${usedPrefix + command} write for me a JavaScript code for creating a loop.`;
 
   try {
-    if (global.ai === "API_HERE")
+    if (kanambo === "API_HERE")
       return m.reply('Put a valid API key in config js');
 
     const response = await openai.createChatCompletion({
