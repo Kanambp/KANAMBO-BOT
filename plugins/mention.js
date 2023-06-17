@@ -6,7 +6,7 @@ let handler = async (m, { conn, text }) => {
     }
   })
 }
-handler.help = ['mention <teks>']
+handler.help = ['creator <teks>']
 handler.tags = ['main-creator']
 
 handler.command = /^creator$/i
