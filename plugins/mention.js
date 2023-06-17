@@ -7,8 +7,8 @@ let handler = async (m, { conn, text }) => {
   })
 }
 handler.help = ['mention <teks>']
-handler.tags = ['tools']
+handler.tags = ['main']
 
-handler.command = /^mention$/i
+handler.command = /^creator$/i
 
-export default handler;
+export default handler
