@@ -8,17 +8,17 @@ let lkr = `❀° ┄──•••───╮
        𝘽𝙊𝙏 𝙈𝙀𝙉𝙐  
 ╰───•••──┄ °❀     
 ┏━━━ʕ•㉨•ʔ━━━┓
-⎪⌲👑 _${usedPrefix}ping_
-⎪⌲👑 _${usedPrefix}uptime_
-⎪⌲👑 _${usedPrefix}owner_
-⎪⌲👑 _${usedPrefix}script_
-⎪⌲👑 _${usedPrefix}runtime_
-⎪⌲👑 _${usedPrefix}infobot_
-⎪⌲👑 _${usedPrefix}donate_
-⎪⌲👑 _${usedPrefix}groups_
-⎪⌲👑 _${usedPrefix}blocklist_
-⎪⌲👑 _${usedPrefix}listprem_
-⎪⌲👑 kanambo
+⎪⌲📝 _${usedPrefix}ping_
+⎪⌲📝 _${usedPrefix}uptime_
+⎪⌲📝 _${usedPrefix}owner_
+⎪⌲📝 _${usedPrefix}script_
+⎪⌲📝 _${usedPrefix}runtime_
+⎪⌲📝 _${usedPrefix}infobot_
+⎪⌲📝 _${usedPrefix}donate_
+⎪⌲📝 _${usedPrefix}groups_
+⎪⌲📝 _${usedPrefix}blocklist_
+⎪⌲📝 _${usedPrefix}listprem_
+⎪⌲📝 kanambo
 ┗━━━ʕ•㉨•ʔ━━━┛
 
 ❀° ┄──•••───╮
@@ -43,87 +43,87 @@ ${readMore}
       𝙂𝙍𝙊𝙐𝙋 𝙈𝙀𝙉𝙐 
 ╰───•••──┄ °❀     
 ┏━━━ʕ•㉨•ʔ━━━┓
-⎪⌲💎_${usedPrefix}kick *<@tag>*_
-⎪⌲💎_${usedPrefix}promote *<@tag>*_
-⎪⌲💎 _${usedPrefix}demote *<@tag>*_
-⎪⌲💎 _${usedPrefix}infogroup_
-⎪⌲💎 _${usedPrefix}resetlink_
-⎪⌲💎 _${usedPrefix}link_
-⎪⌲💎 _${usedPrefix}setpp *<image>*_
-⎪⌲💎 _${usedPrefix}setname *<text>*_
-⎪⌲💎 _${usedPrefix}setdesc *<text>*_
-⎪⌲💎 _${usedPrefix}setwelcome *<text>*_
-⎪⌲💎 _${usedPrefix}setbye *<text>*_
-⎪⌲💎 _${usedPrefix}hidetag *<text/image/audio/vid>*_
-⎪⌲💎 _${usedPrefix}warn *<@tag>*_
-⎪⌲💎 _${usedPrefix}unwarn *<@tag>*_
-⎪⌲💎 _${usedPrefix}group *<open/close>*_
-⎪⌲💎 _${usedPrefix}enable
+⎪⌲⛓️_${usedPrefix}kick *<@tag>*_
+⎪⌲⛓️_${usedPrefix}promote *<@tag>*_
+⎪⌲⛓️ _${usedPrefix}demote *<@tag>*_
+⎪⌲⛓️ _${usedPrefix}infogroup_
+⎪⌲⛓️ _${usedPrefix}resetlink_
+⎪⌲⛓️ _${usedPrefix}link_
+⎪⌲⛓️ _${usedPrefix}setpp *<image>*_
+⎪⌲⛓️ _${usedPrefix}setname *<text>*_
+⎪⌲⛓️ _${usedPrefix}setdesc *<text>*_
+⎪⌲⛓️ _${usedPrefix}setwelcome *<text>*_
+⎪⌲⛓️ _${usedPrefix}setbye *<text>*_
+⎪⌲⛓️ _${usedPrefix}hidetag *<text/image/audio/vid>*_
+⎪⌲⛓️ _${usedPrefix}warn *<@tag>*_
+⎪⌲⛓️ _${usedPrefix}unwarn *<@tag>*_
+⎪⌲⛓️ _${usedPrefix}group *<open/close>*_
+⎪⌲⛓️ _${usedPrefix}enable
 ┗━━━ʕ•㉨•ʔ━━━┛
 
 ❀° ┄──•••───╮
        𝘿𝙇 𝙈𝙀𝙉𝙐 
 ╰───•••──┄ °❀     
 ┏━━━ʕ•㉨•ʔ━━━┓
-⎪⌲💎_${usedPrefix}play_
-⎪⌲💎_${usedPrefix}song_
-⎪⌲💎 _${usedPrefix}yta <link>_
-⎪⌲💎 _${usedPrefix}ytv <link>_
-⎪⌲💎 _${usedPrefix}ytmp3 <link>_
-⎪⌲💎 _${usedPrefix}ytmp4 <link>_
-⎪⌲💎 _${usedPrefix}gimage_
-⎪⌲💎 _${usedPrefix}pinterest_
-⎪⌲💎 _${usedPrefix}mediafire <link>_
-⎪⌲💎 _${usedPrefix}gdrive <link>_
-⎪⌲💎 _${usedPrefix}gitclone <link>_
-⎪⌲💎 _${usedPrefix}twitter <link>_
-⎪⌲💎 _${usedPrefix}tiktok <link>_
-⎪⌲💎 _${usedPrefix}tiktokstalk_
-⎪⌲💎 _${usedPrefix}instagram <link>_
-⎪⌲💎 _${usedPrefix}spotify_
-⎪⌲💎 _${usedPrefix}facebook <link>_
+⎪⌲📀_${usedPrefix}play_
+⎪⌲💿_${usedPrefix}song_
+⎪⌲📀 _${usedPrefix}yta <link>_
+⎪⌲💿 _${usedPrefix}ytv <link>_
+⎪⌲📀 _${usedPrefix}ytmp3 <link>_
+⎪⌲💿 _${usedPrefix}ytmp4 <link>_
+⎪⌲📀 _${usedPrefix}gimage_
+⎪⌲💿 _${usedPrefix}pinterest_
+⎪⌲📀 _${usedPrefix}mediafire <link>_
+⎪⌲💿 _${usedPrefix}gdrive <link>_
+⎪⌲📀 _${usedPrefix}gitclone <link>_
+⎪⌲💿 _${usedPrefix}twitter <link>_
+⎪⌲📀 _${usedPrefix}tiktok <link>_
+⎪⌲💿 _${usedPrefix}tiktokstalk_
+⎪⌲📀 _${usedPrefix}instagram <link>_
+⎪⌲💿 _${usedPrefix}spotify_
+⎪⌲📀 _${usedPrefix}facebook <link>_
 ┗━━━ʕ•㉨•ʔ━━━┛
 ${readMore}
 ❀° ┄──•••───╮
        𝙀𝘾𝙊𝙉𝙊𝙈𝙔 
 ╰───•••──┄ °❀     
 ┏━━━ʕ•㉨•ʔ━━━┓
-⎪⌲👑 _${usedPrefix}claim/daily_
-⎪⌲👑 _${usedPrefix}weekly_
-⎪⌲👑 _${usedPrefix}monthly_
-⎪⌲👑 _${usedPrefix}leaderboard_
-⎪⌲👑 _${usedPrefix}bet_
-⎪⌲👑 _${usedPrefix}heal_
-⎪⌲👑 _${usedPrefix}craft_
-⎪⌲👑 _${usedPrefix}balance_
-⎪⌲👑 _${usedPrefix}shop_
-⎪⌲👑 _${usedPrefix}sell_
-⎪⌲👑 _${usedPrefix}adventure_
-⎪⌲👑 _${usedPrefix}opencrate_
-⎪⌲👑 _${usedPrefix}mine_
-⎪⌲👑 _${usedPrefix}work_
-⎪⌲👑 _${usedPrefix}transfer_
-⎪⌲👑 _${usedPrefix}todiamond_
-⎪⌲👑 _${usedPrefix}tomoney_
+⎪⌲💰 _${usedPrefix}claim/daily_
+⎪⌲💰 _${usedPrefix}weekly_
+⎪⌲💰 _${usedPrefix}monthly_
+⎪⌲💰 _${usedPrefix}leaderboard_
+⎪⌲💰 _${usedPrefix}bet_
+⎪⌲💰 _${usedPrefix}heal_
+⎪⌲💰 _${usedPrefix}craft_
+⎪⌲💰 _${usedPrefix}balance_
+⎪⌲💰 _${usedPrefix}shop_
+⎪⌲💰 _${usedPrefix}sell_
+⎪⌲💰 _${usedPrefix}adventure_
+⎪⌲💰 _${usedPrefix}opencrate_
+⎪⌲💰 _${usedPrefix}mine_
+⎪⌲💰 _${usedPrefix}work_
+⎪⌲💰 _${usedPrefix}transfer_
+⎪⌲💰 _${usedPrefix}todiamond_
+⎪⌲💰 _${usedPrefix}tomoney_
 ┗━━━ʕ•㉨•ʔ━━━┛
 
 ❀° ┄──•••───╮
       𝙁𝙐𝙉 𝙈𝙀𝙉𝙐
 ╰───•••──┄ °❀     
 ┏━━━ʕ•㉨•ʔ━━━┓
-⎪⌲👑 _${usedPrefix}character_
-⎪⌲👑 _${usedPrefix}truth_
-⎪⌲👑 _${usedPrefix}dare_
-⎪⌲👑 _${usedPrefix}flirt_
-⎪⌲👑 _${usedPrefix}gay_
-⎪⌲👑 _${usedPrefix}shayeri_
-⎪⌲👑 _${usedPrefix}ship_
-⎪⌲👑 _${usedPrefix}waste_
-⎪⌲👑 _${usedPrefix}simpcard_
-⎪⌲👑 _${usedPrefix}hornycard_
-⎪⌲👑 _${usedPrefix}ytcomment_
-⎪⌲👑 _${usedPrefix}stupid_
-⎪⌲👑 _${usedPrefix}lolicon_
+⎪⌲💥 _${usedPrefix}character_
+⎪⌲💥 _${usedPrefix}truth_
+⎪⌲💥 _${usedPrefix}dare_
+⎪⌲💥 _${usedPrefix}flirt_
+⎪⌲💥 _${usedPrefix}gay_
+⎪⌲💥 _${usedPrefix}shayeri_
+⎪⌲💥 _${usedPrefix}ship_
+⎪⌲💥 _${usedPrefix}waste_
+⎪⌲💥 _${usedPrefix}simpcard_
+⎪⌲💥 _${usedPrefix}hornycard_
+⎪⌲💥 _${usedPrefix}ytcomment_
+⎪⌲💥 _${usedPrefix}stupid_
+⎪⌲💥 _${usedPrefix}lolicon_
 ┗━━━ʕ•㉨•ʔ━━━┛
 
 ❀° ┄──•••───╮
@@ -188,49 +188,49 @@ ${readMore}
      𝙎𝙏𝙄𝘾𝙆𝙀𝙍 𝙈𝙀𝙉𝙐
 ╰───•••──┄ °❀     
 ┏━━━ʕ•㉨•ʔ━━━┓
-⎪⌲👑 _${usedPrefix}sticker_
-⎪⌲👑 _${usedPrefix}take_
-⎪⌲👑 _${usedPrefix}scircle_
-⎪⌲👑 _${usedPrefix}smaker_
-⎪⌲👑 _${usedPrefix}sremovebg_
-⎪⌲👑 _${usedPrefix}getsticker_
-⎪⌲👑 _${usedPrefix}emojimix_
-⎪⌲👑 _${usedPrefix}toimg_
-⎪⌲👑 _${usedPrefix}tovid_
-⎪⌲👑 _${usedPrefix}ttp_
-⎪⌲👑 _${usedPrefix}ttp2_
-⎪⌲👑 _${usedPrefix}ttp3_
-⎪⌲👑 _${usedPrefix}ttp4_
-⎪⌲👑 _${usedPrefix}ttp5_
-⎪⌲👑 _${usedPrefix}attp_
-⎪⌲👑 _${usedPrefix}attp2_
-⎪⌲👑 _${usedPrefix}attp3_
+⎪⌲🧸 _${usedPrefix}sticker_
+⎪⌲🧸 _${usedPrefix}take_
+⎪⌲🧸 _${usedPrefix}scircle_
+⎪⌲🧸 _${usedPrefix}smaker_
+⎪⌲🧸 _${usedPrefix}sremovebg_
+⎪⌲🧸 _${usedPrefix}getsticker_
+⎪⌲🧸 _${usedPrefix}emojimix_
+⎪⌲🧸 _${usedPrefix}toimg_
+⎪⌲🧸 _${usedPrefix}tovid_
+⎪⌲🧸 _${usedPrefix}ttp_
+⎪⌲🧸 _${usedPrefix}ttp2_
+⎪⌲🧸 _${usedPrefix}ttp3_
+⎪⌲🧸 _${usedPrefix}ttp4_
+⎪⌲🧸 _${usedPrefix}ttp5_
+⎪⌲🧸 _${usedPrefix}attp_
+⎪⌲🧸 _${usedPrefix}attp2_
+⎪⌲🧸 _${usedPrefix}attp3_
 ┗━━━ʕ•㉨•ʔ━━━┛
 
 ❀° ┄──•••───╮
      𝙏𝙊𝙊𝙇𝙎 𝙈𝙀𝙉𝙐
 ╰───•••──┄ °❀     
 ┏━━━ʕ•㉨•ʔ━━━┓
-⎪⌲👑 _${usedPrefix}autosticker_
-⎪⌲👑 _${usedPrefix}pdf_
-⎪⌲👑 _${usedPrefix}whatmusic_
-⎪⌲👑 _${usedPrefix}calc_
-⎪⌲👑 _${usedPrefix}google_
-⎪⌲👑 _${usedPrefix}lyrics_
-⎪⌲👑 _${usedPrefix}readmore_
-⎪⌲👑 _${usedPrefix}ssweb_
-⎪⌲👑 _${usedPrefix}tts_
-⎪⌲👑 _${usedPrefix}translate_
-⎪⌲👑 _${usedPrefix}tourl_
-⎪⌲👑 _${usedPrefix}wikipedia_
-⎪⌲👑 _${usedPrefix}nowa_
-⎪⌲👑 _${usedPrefix}qrmaker_
-⎪⌲👑 _${usedPrefix}readqr_
-⎪⌲👑 _${usedPrefix}styletext_
-⎪⌲👑 _${usedPrefix}weather_
-⎪⌲👑 _${usedPrefix}siri_
-⎪⌲👑 _${usedPrefix}alexa_
-⎪⌲👑 _${usedPrefix}dalle_
+⎪⌲📌 _${usedPrefix}autosticker_
+⎪⌲📌 _${usedPrefix}pdf_
+⎪⌲📌 _${usedPrefix}whatmusic_
+⎪⌲📌 _${usedPrefix}calc_
+⎪⌲📌 _${usedPrefix}google_
+⎪⌲📌 _${usedPrefix}lyrics_
+⎪⌲📌 _${usedPrefix}readmore_
+⎪⌲📌 _${usedPrefix}ssweb_
+⎪⌲📌 _${usedPrefix}tts_
+⎪⌲📌 _${usedPrefix}translate_
+⎪⌲📌 _${usedPrefix}tourl_
+⎪⌲📌 _${usedPrefix}wikipedia_
+⎪⌲📌 _${usedPrefix}nowa_
+⎪⌲📌 _${usedPrefix}qrmaker_
+⎪⌲📌 _${usedPrefix}readqr_
+⎪⌲📌 _${usedPrefix}styletext_
+⎪⌲📌 _${usedPrefix}weather_
+⎪⌲📌 _${usedPrefix}siri_
+⎪⌲📌 _${usedPrefix}alexa_
+⎪⌲📌 _${usedPrefix}dalle_
 ┗━━━ʕ•㉨•ʔ━━━┛
 
 ❀° ┄──•••───╮
