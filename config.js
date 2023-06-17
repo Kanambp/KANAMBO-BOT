@@ -15,7 +15,7 @@ global.owner = [
 global.mods = ['254114148625', '254114018035'] 
 global.prems = ['254114148625', '254114018035']
 
-global.ai = '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', // Get you Api-key from 'https://platform.openai.com/account/api-keys'
+global.ai = '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', // Get you Api-key from 'https://platform.openai.com/account/api-keys'
 global.org = 'org-Wmzg6lcVPHGYXxmvPpM0CDsu',   
   global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
