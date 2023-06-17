@@ -27,7 +27,7 @@ const response = await openai.createChatCompletion({
   }
 }
 
-handler.command = ['ai2']
+handler.command = ['aiai']
 handler.diamond = false
 export default handler
     
