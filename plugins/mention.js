@@ -11,4 +11,4 @@ handler.tags = ['tools']
 
 handler.command = /^mention$/i
 
-module.exports = handler
+export default handler;
