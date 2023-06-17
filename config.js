@@ -8,7 +8,8 @@ import axios from 'axios'
 
 global.owner = [
   ['254114148625', 'KANAMBO', true],
-  ['254114018035', 'FORTUNATUS', true'], 
+  ['254114018035', 'FORTUNATUS', true'],
+  ['']
 ] //Number of owners
 
 global.mods = ['254114148625', '254114018035'] 
