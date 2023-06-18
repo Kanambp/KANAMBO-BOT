@@ -17,13 +17,6 @@ case 'gand':
     conn.sendFile(m.chat, as.data, 'img.jpg', `✅ Random ${command}`, m)
     m.react(xmoji) 
 break
-
-case 'penis':
-case 'gand':
-    let as = await conn.getFile(global.API('fgmods', '/api/nsfw/penis', { }, 'apikey'))
-    conn.sendFile(m.chat, as.data, 'img.jpg', `✅ Random ${command}`, m)
-    m.react(xmoji) 
-break
 		
 case 'boobs':
 case 'boobies':
@@ -57,7 +50,7 @@ case 'cosplay':
 default:
  }
 }
-handler.help = ['ass', 'boobs', 'lesbian', 'pussy', 'pack', 'penis']
+handler.help = ['ass', 'boobs', 'lesbian', 'pussy', 'pack']
 handler.tags = ['nsfw']
 handler.command = /^(ass|gand|boobs|boobies|lesbian|lesbians|pussy|chut|cosplay|pack)$/i
 handler.diamond = true
