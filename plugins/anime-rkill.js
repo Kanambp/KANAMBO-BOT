@@ -29,7 +29,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 handler.help = ['kill @tag']
 handler.tags = ['rnime']
 handler.command = /^(kill|matar)$/i
-handler.diamond = true
+handler.diamond = false
 handler.group = true
 
 export default handler
