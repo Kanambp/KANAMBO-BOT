@@ -27,7 +27,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 handler.help = ['pat @tag']
 handler.tags = ['rnime']
 handler.command = /^(acariciar|pat)$/i
-handler.diamond = true
+handler.diamond = false
 handler.group = true
 
 export default handler
