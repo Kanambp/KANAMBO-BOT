@@ -1,30 +1,30 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn }) => {
   let caption = `
-╭───[Ikratos-MD-v1]───╮
+╭───[KANAMBO-BOT]───╮
 │╭────────────────────
 ┴│👋 Hey there, ${conn.getName(m.sender)}!
-⬡│🤖 I'm Ikratos-MD-v1\n⬡│ I'm up and running! 🚀
+⬡│🤖 I'm KANAMBO-BOT\n⬡│ I'm up and running! 🚀
 │╰────────────────────
 ┠───[ BOT INFO ]────╮
 │╭────────────────────
-┴│ Ikratos-MD-v1
+┴│ KANAMBO-BOT
 ⬡│💻 A WhatsApp bot created by:
-⬡│👨‍💻 Ahmad Ali 🇵🇰
+⬡│👨‍💻 PETER KANAMBO 🇵🇰
 ⬡│📞 For any inquiries, contact:
-⬡│📱 wa.me/923470027813
+⬡│📱 wa.me/254114148625
 ⬡│🙅‍♂️ Don't call the owner or you\'ll be
 ⬡│ ignored or blocked! 😬
 │╰────────────────────
 ┠───[ HOW TO USE ]────⋆
 ┴│💡 Some commands you can use:
-⬡│🔸 .menu \n⬡│- Shows a list of available commands
+⬡│🔸 .list \n⬡│- Shows a list of available commands
 ⬡│🔸 .play \n⬡│- Plays a YouTube video or audio.
 ⬡│🔸 .sticker \n⬡│- Converts an image to a sticker
 ┬│🔸 .translate \n⬡│- Translates text to other lang
 │╰──────────────
 ╰────────═┅═───────
-*Thank you for choosing Ikratos-MD-v1! 🌟✨*
+*Thank you for choosing KANAMBO-BOT! 🌟✨*
 `.trim()
   m.reply(caption)
 }
