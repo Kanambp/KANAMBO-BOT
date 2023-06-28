@@ -10,7 +10,7 @@ let handler = async (m, { conn }) => {
 │╭────────────────────
 ┴│ KANAMBO-BOT
 ⬡│💻 A WhatsApp bot created by:
-⬡│👨‍💻 PETER KANAMBO 🇵🇰
+⬡│👨‍💻 PETER KANAMBO KE
 ⬡│📞 For any inquiries, contact:
 ⬡│📱 wa.me/254114148625
 ⬡│🙅‍♂️ Don't call the owner or you\'ll be
