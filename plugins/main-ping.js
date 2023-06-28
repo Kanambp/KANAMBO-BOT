@@ -3,69 +3,16 @@ import speed from 'performance-now'
 import { spawn, exec, execSync } from 'child_process'
 
 let handler = async (m, { conn }) => {
-  const chats = conn.chats.all()
-  const groups = chats.filter(v => v.jid.endsWith('g.us'))
-  const groupsIn = groups.filter(v => !v.read_only)
-  const used = process.memoryUsage()
-  const cpus = os.cpus().map(cpu => {
-    cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
-    return cpu
-  })
-  const cpu = cpus.reduce((last, cpu, _, { length }) => {
-    last.total += cpu.total
-    last.speed += cpu.speed / length
-    last.times.user += cpu.times.user
-    last.times.nice += cpu.times.nice
-    last.times.sys += cpu.times.sys
-    last.times.idle += cpu.times.idle
-    last.times.irq += cpu.times.irq
-    return last
-  }, {
-    speed: 0,
-    total: 0,
-    times: {
-      user: 0,
-      nice: 0,
-      sys: 0,
-      idle: 0,
-      irq: 0
-    }
-  })
-  let old = performance.now()
-  await m.reply('_Testing speed..._')
-  let neww = performance.now()
-  let speed = neww - old
-  m.reply(`
-Respond in ${speed} milliseconds
-
-💬 Status :
-- *${groups.length}* Group Chats
-- *${groupsIn.length}* Groups Joined
-- *${groups.length - groupsIn.length}* Groups Left
-- *${chats.length - groups.length}* Personal Chats
-- *${chats.length}* Total Chats
-
-📱 *Phone Info* :
-${'```' + `
-🔋 Battery : ${conn.battery ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Charging...' : '⚡ Discharging'}` : 'Unknown'}
-${util.format(conn.user.phone)}
-`.trim() + '```'}
-
-💻 *Server Info* :
-ROM: ${format(os.totalmem() - os.freemem())} / ${format(os.totalmem())}
-
-_NodeJS Memory Usage_
-${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.length)),' ')}: ${format(used[key])}`).join('\n') + '```'}
-
-${cpus[0] ? `_Total CPU Usage_
-${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
-
-_CPU Core(s) Usage (${cpus.length} Core CPU)_
-${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
-`.trim())
+         let timestamp = speed();
+         let latensi = speed() - timestamp;
+         exec(`neofetch --stdout`, (error, stdout, stderr) => {
+          let child = stdout.toString("utf-8");
+          let ssd = child.replace(/Memory:/, "Ram:");
+          m.reply(`${ssd} *_speed test..._* : ${latensi.toFixed(4)} _ms_`);
+            });
 }
-handler.help = ['ping/speed/info']
-handler.tags = ['info']
+handler.help = ['ping']
+handler.tags = ['main']
+handler.command = ['ping', 'speed']
 
-handler.command = /^(ping|speed|info)$/i
-module.exports = handler
+export default handler
