@@ -1,23 +1,24 @@
-import { lyrics, lyricsv2 } from '@bochilteam/scraper'
+import fetch from 'node-fetch'
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-    let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : ''
-    if (!teks) throw `Use example ${usedPrefix}${command} hallo`
-    const result = await lyricsv2(teks).catch(async _ => await lyrics(teks))
-    m.reply(`
-Lyrics *${result.title}*
-Author ${result.author}
-
-
-${result.lyrics}
-
-
-Url ${result.link}
-`.trim())
+let handler = async (m, {conn, text }) => {
+  let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : ''
+   if (!teks) throw `✳️ Enter the name of the song`
+   try {
+  let res = await fetch(global.API('https://some-random-api.com', '/lyrics', { title: teks }))
+  if (!res.ok) throw await res.text()
+  let json = await res.json()
+  if (!json.thumbnail.genius) throw json
+  conn.sendFile(m.chat, json.thumbnail.genius, null, `
+▢ *${json.title}*
+*${json.author}*\n
+${json.lyrics}`, m)
+m.react(done)
+} catch (e) {
+	m.react(error)
+	} 
 }
-
-handler.help = ['lirik'].map(v => v + ' <Apa>')
-handler.tags = ['internet']
-handler.command = /^(lirik|lyrics|lyric)$/i
+handler.help = ['lyrics']
+handler.tags = ['tools']
+handler.command = ['letra', 'lyrics', 'letras'] 
 
 export default handler
