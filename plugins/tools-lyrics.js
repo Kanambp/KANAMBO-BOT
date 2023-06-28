@@ -1,4 +1,4 @@
-import { lyrics, lyricsv2 } from '@Lyrics/lyrics-api'
+import { lyrics, lyricsv2 } from '@lyrics-fetcher'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : ''
