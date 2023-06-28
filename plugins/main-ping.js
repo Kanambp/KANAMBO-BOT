@@ -2,16 +2,6 @@
 import speed from 'performance-now'
 import { spawn, exec, execSync } from 'child_process'
 
-let os = require('os')
-let util = require('util')
-let { performance } = require('perf_hooks')
-let { sizeFormatter } = require('human-readable')
-let format = sizeFormatter({
-  std: 'JEDEC', // 'SI' (default) | 'IEC' | 'JEDEC'
-  decimalPlaces: 2,
-  keepTrailingZeroes: false,
-  render: (literal, symbol) => `${literal} ${symbol}B`,
-})
 let handler = async (m, { conn }) => {
   const chats = conn.chats.all()
   const groups = chats.filter(v => v.jid.endsWith('g.us'))
