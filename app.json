@@ -1,10 +1,34 @@
 {
-  "name": "GURU-BOT",
-  "description": "Customizable WhatsApp Bot",
-  "repository": "https://github.com/Guru322/GURU-BOT",
-  "logo": "https://i.imgur.com/gEj1qC6.jpeg",
-  "keywords": ["bot", "whatsapp", "whatsapp-bot", "rpg", "GURU-bot-md", "GURU-bot"],
-  "buildpacks": [
+  "name": "whatsapp-bot (KANAMBO-BOT)",
+  "description": " Whatsapp bot.",
+  "keywords": [
+    "whatsapp bot"
+  ],
+  "repository": "https://github.com/Kanambp/KANAMBO-BOT",
+  "stack": "container",
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "openai apikey",
+      "required": false,
+      "value": ""
+    },
+    "OPENAI_ORGANIZATION": {
+      "description": "openai organisation id",
+      "required": false,
+      "value": ""
+    },
+    "MONGO_DB": {
+      "description": "your mongodb database url",
+      "required": false,
+      "value": ""
+    },
+    "REMOVE_BG_API_KEY": {
+      "description": "removebg api key",
+      "required": false,
+      "value": ""
+    }
+    },
+    "buildpacks": [
     {
       "url": "heroku/nodejs"
     },
