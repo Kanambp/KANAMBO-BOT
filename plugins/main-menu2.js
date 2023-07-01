@@ -223,7 +223,7 @@ Bot has more than 300 commands and as you know Kanambo i am lazy to write all
 `
 //const pp = await (await fetch('https://i.ibb.co/qMG1JPY/fg.jpg')).buffer()
     let pp = './kanambo.jpg' 
-    conn.sendButton(m.chat, m2, '▢ KANAMBO  ┃ ᴮᴼᵀ\n▢ Follow on Instagram\nhttps://www.instagram.com/\n', pp, [
+    conn.sendButton(m.chat, m2, '▢ KANAMBO  ┃ ᴮᴼᵀ\n▢ Follow on Instagram\nhttps://www.instagram.com/donbel_ovibel\n', pp, [
       ['⏍ Info', `${usedPrefix}botinfo`],
       ['⌬ Groups', `${usedPrefix}gpkanambo`]
     ],m, rpyt)
