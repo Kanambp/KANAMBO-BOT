@@ -684,8 +684,8 @@ case 'remove':
                 ppgp = await this.profilePictureUrl(id, 'image');
             } catch (error) {
                 console.error(`Error retrieving profile picture: ${error}`);
-                pp = 'https://i.imgur.com/HNn2o2P.jpg'; // Assign default image URL
-                ppgp = 'https://i.imgur.com/HNn2o2P.jpg'; // Assign default image URL
+                pp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
+                ppgp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
             } finally {
                 let text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
                     (chat.sBye || this.bye || conn.bye || 'HELLO, @user')).replace('@user', '@' + user.split('@')[0]);
@@ -712,11 +712,11 @@ case 'remove':
             break
         case 'promote':
         case 'promover':
-            text = (chat.sPromote || this.spromote || conn.spromote || '@user YOU ARE PROMOTED')
+            text = (chat.sPromote || this.spromote || conn.spromote || '@user is now administrador')
         case 'demote':
         case 'degradar':
             if (!text)
-                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user YOUR ARE DEMOTED')
+                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user not now an administrador')
             text = text.replace('@user', '@' + participants[0].split('@')[0])
             if (chat.detect)
                 this.sendMessage(id, { text, mentions: this.parseMention(text) })
@@ -786,7 +786,7 @@ global.dfail = (type, m, conn) => {
         private: '*ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ* • This command can only be used in the *private chat of the Bot*',
         admin: '*ᴏɴʟʏ ᴀᴅᴍɪɴ* • This command is only for *Group Admins*',
         botAdmin: '*ᴏɴʟʏ ʙᴏᴛ ᴀᴅᴍɪɴ* • To use this command I must be *Admin!*',
-        unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ ʏᴇᴛ* •  Sign in to use this feature Typing:\n\n*/reg name.age*\n\n📌Example : */reg KANAMBO.20*', 
+        unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ ʏᴇᴛ* •  Sign in to use this feature Typing:\n\n*/reg name.age*\n\n📌Example : */reg NARUTO.20*', 
         restrict: '*ʀᴇsᴛʀɪᴄᴛ* • This feature is *disabled*',
     }[type]
     if (msg) return m.reply(msg)
