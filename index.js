@@ -21,7 +21,7 @@ say('KANAMBO -  BOT', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-say(`'${name}' By @KANAMBO, {
+  say(`'${name}' By @KANAMBO._`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
