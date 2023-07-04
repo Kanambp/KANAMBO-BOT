@@ -31,10 +31,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.comkanambp/KANAMBO-BOT.git"
+        "url": "git+https://github.com/Guru322/GURU-BOT.git"
     },
     "bugs": {
-        "url": "https://github.com/kanambp/KANAMBO-BOT/issues"
+        "url": "https://github.com/Guru322/GURU-BOT/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
@@ -95,4 +95,4 @@
          "wa-sticker-formatter": "^4.3.2"
        
     }
-}
+    }
