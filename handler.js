@@ -76,7 +76,7 @@ export async function handler(chatUpdate) {
                 if (!('role' in user))
                     user.role = 'Beginner'
                 if (!('autolevelup' in user))
-                    user.autolevelup = true
+                    user.autolevelup = false
                 if (!isNumber(user.money))
                     user.money = 0
                 if (!isNumber(user.atm))
@@ -215,7 +215,7 @@ export async function handler(chatUpdate) {
                     warn: 0,
                     level: 0,                    
                     role: 'Beginner',
-                    autolevelup: true,
+                    autolevelup: false,
                     money: 0,
                     bank: 0,
                     atm: 0,
@@ -674,44 +674,41 @@ export async function participantsUpdate({ id, participants, action }) {
     let text = ''
     switch (action) {
         case 'add':
-        case 'remove':
-            if (chat.welcome) {
-                let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
-                for (let user of participants) {
-                    let pp = 'https://i.imgur.com/8B4jwGq.jpeg'
-                    let ppgp = 'https://i.imgur.com/8B4jwGq.jpeg'
-                    try {
-                        pp = await this.profilePictureUrl(user, 'image')
-                        ppgp = await this.profilePictureUrl(id, 'image')
-                        } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
-                            (chat.sBye || this.bye || conn.bye || 'HELLO, @user')).replace('@user', '@' + user.split('@')[0])
-                         
-                            let wel = API('fgmods', '/api/welcome', {
-                                username: await this.getName(user),
-                                groupname: await this.getName(id),
-                                groupicon: ppgp,
-                                membercount: groupMetadata.participants.length,
-                                profile: pp,
-                                background: 'https://cdn.jsdelivr.net/gh/Kanambp/kanamb@main/kanambo.jpg'
-                            }, 'apikey')
+case 'remove':
+    if (chat.welcome) {
+        let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata;
+        for (let user of participants) {
+            let pp, ppgp;
+            try {
+                pp = await this.profilePictureUrl(user, 'image');
+                ppgp = await this.profilePictureUrl(id, 'image');
+            } catch (error) {
+                console.error(`Error retrieving profile picture: ${error}`);
+                pp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
+                ppgp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
+            } finally {
+                let text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user').replace('@group', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'Desconocido') :
+                    (chat.sBye || this.bye || conn.bye || 'HELLO, @user')).replace('@user', '@' + user.split('@')[0]);
 
-                            let lea = API('fgmods', '/api/goodbye', {
-                                username: await this.getName(user),
-                                groupname: await this.getName(id),
-                                groupicon: ppgp,
-                                membercount: groupMetadata.participants.length,
-                                profile: pp,
-                                background: 'https://cdn.jsdelivr.net/gh/Kanambp/kanamb@main/kanambo.jpg'
-                            }, 'apikey')
-                             this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
-                            /*this.sendButton(id, text, igfg, action === 'add' ? wel : lea, [
-                             [(action == 'add' ? '⦙☰ MENU' : 'BYE'), (action == 'add' ? '/help' : '')], 
-                             [(action == 'add' ? '⏍ INFO' : 'ッ'), (action == 'add' ? '/info' : ' ')] ], null, {mentions: [user]})
-                          */
-                    }
+                let nthMember = groupMetadata.participants.length;
+                let secondText = action === 'add' ? `Welcome, ${await this.getName(user)}, our ${nthMember}th member` : `Goodbye, our ${nthMember}th group member`;
+
+                try {
+                    let apiKey = "gandu";  // Replace with your actual API Key
+                    let wel = await fetch(`https://oni-chan.my.id/api/canvas/welcome_v1?ppurl=${encodeURIComponent(pp)}&bgurl=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoyd4vOi-tJEhN-voL-yVTYsko8dcBvloa2A&usqp=CAU&username=${encodeURIComponent(await this.getName(user))}&totalmember=${encodeURIComponent(nthMember.toString())}&secondtext=${encodeURIComponent(secondText)}&apikey=${apiKey}`);
+                    let lea = await fetch(`https://oni-chan.my.id/api/canvas/leave_v1?ppurl=${encodeURIComponent(pp)}&bgurl=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoyd4vOi-tJEhN-voL-yVTYsko8dcBvloa2A&usqp=CAU&username=${encodeURIComponent(await this.getName(user))}&totalmember=${encodeURIComponent(nthMember.toString())}&secondtext=${encodeURIComponent(secondText)}&apikey=${apiKey}`);
+
+                    let welBuffer = await wel.buffer();
+                    let leaBuffer = await lea.buffer();
+
+                    this.sendFile(id, action === 'add' ? welBuffer : leaBuffer, 'welcome.png', text, null, false, { mentions: [user] });
+                } catch (error) {
+                    console.error(`Error generating welcome/leave image: ${error}`);
                 }
             }
+        }
+    }
+
             break
         case 'promote':
         case 'promover':
@@ -789,7 +786,7 @@ global.dfail = (type, m, conn) => {
         private: '*ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ* • This command can only be used in the *private chat of the Bot*',
         admin: '*ᴏɴʟʏ ᴀᴅᴍɪɴ* • This command is only for *Group Admins*',
         botAdmin: '*ᴏɴʟʏ ʙᴏᴛ ᴀᴅᴍɪɴ* • To use this command I must be *Admin!*',
-        unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ ʏᴇᴛ* •  Sign in to use this feature Typing:\n\n*/reg name.age*\n\n📌Example : */reg GURU.20*', 
+        unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ ʏᴇᴛ* •  Sign in to use this feature Typing:\n\n*/reg name.age*\n\n📌Example : */reg KANAMBO.20*', 
         restrict: '*ʀᴇsᴛʀɪᴄᴛ* • This feature is *disabled*',
     }[type]
     if (msg) return m.reply(msg)
