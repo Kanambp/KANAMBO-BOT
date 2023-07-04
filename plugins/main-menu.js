@@ -34,14 +34,12 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(850) 
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
-_*Hello ${taguser} thank you for choosing KANAMBO-BOT made by Peter Kanambo enjoy over 300 commands*_
+_*Hello ${taguser} thank you for choosing KANAMBO-BOT made by Peter Kanambo*_
 
 ┌─•✧𝑰𝑵𝑭𝑶 𝑼𝑺𝑬𝑹✧•─┐
 ┊ 🛑  *𝙋𝙍𝙀𝙁𝙄𝙓:* ${usedPrefix}
 ┊ 👨‍💻  *𝙉𝘼𝙈𝙀:* ${name}
 ┊ 😈  𝙊𝙒𝙉𝙀𝙍 𝙉𝘼𝙈𝙀 :${author}
-┊ 💎  *𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎:* ${diamond}
-┊ 🃏  *𝙀𝙓𝙋𝙀𝙍𝙄𝙀𝙉𝘾𝙀:* ${exp}
 └─── •✧✧• ────┘
 
 ┌──•✧𝑻𝒐𝒅𝒂𝒚✧•─────┐
