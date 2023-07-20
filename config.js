@@ -7,14 +7,13 @@ import axios from 'axios'
 
 
 global.owner = [
-  ['254114148625', 'KANAMBO', true],
-  ['254114018035', 'FORTUNATUS', true],
-  ['2348106542427', 'JESSE', true],
+  ['923036631033', 'KASHIF', true],
+  ['923068872881', 'SILVER FOX', true],
   ['']
 ] //Number of owners
 
-global.mods = ['254114148625', '254114018035'] 
-global.prems = ['254114148625', '254114018035']
+global.mods = ['923036631033', '923068872881'] 
+global.prems = ['923036631033', '923068872881']
 
 // global.ai = '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', // Get you Api-key from 'https://platform.openai.com/account/api-keys'
 // global.org = 'org-Wmzg6lcVPHGYXxmvPpM0CDsu',   
@@ -51,13 +50,13 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'KANAMBO-BOT'
+global.botname = 'SILVER FOX'
 global.premium = 'true'
-global.packname = 'KANAMBO┃ᴮᴼᵀ' 
-global.author = '@PETER KANAMBO' 
+global.packname = 'Silver┃Fox' 
+global.author = '@Silver Fox' 
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/\n' 
-global.dygp = 'https://chat.whatsapp.com/'
-global.fgsc = 'https://github.com/Kanambp/KANAMBO-BOT' 
+global.dygp = 'https://chat.whatsapp.com/EcDdyVEFdXjJXzzr2WnMIG'
+global.fgsc = 'https://chat.whatsapp.com/EcDdyVEFdXjJXzzr2WnMIG' 
 global.fgyt = 'https://youtube.com/'
 global.fgpyp = 'https://youtube.com/'
 global.fglog = 'https://cdn.jsdelivr.net/gh/Kanambp/kanamb@main/kanambo.jpg' 
