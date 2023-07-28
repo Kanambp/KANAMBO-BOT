@@ -8,8 +8,6 @@ import axios from 'axios'
 
 global.owner = [
   ['254114148625', 'KANAMBO', true],
-  ['254114018035', 'FORTUNATUS', true],
-  ['2348106542427', 'JESSE', true],
   ['']
 ] //Number of owners
 
@@ -54,7 +52,7 @@ global.APIKeys = { // APIKey Here
 global.botname = 'KANAMBO-BOT'
 global.premium = 'true'
 global.packname = 'KANAMBO┃ᴮᴼᵀ' 
-global.author = '@PETER KANAMBO' 
+global.author = '@PETER MR.K' 
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/\n' 
 global.dygp = 'https://chat.whatsapp.com/'
 global.fgsc = 'https://github.com/Kanambp/KANAMBO-BOT' 
