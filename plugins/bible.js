@@ -24,7 +24,7 @@ let bibleChapterHandler = async (m, { conn }) => {
 
     let chapterData = await chapterRes.json();
 
-    let translatedChapterHindi = await translate(chapterData.text, { to: 'hi', autoCorrect: true });
+    let translatedChapterLuo = await translate(chapterData.text, { to: 'luo', autoCorrect: true });
 
     let translatedChapterEnglish = await translate(chapterData.text, { to: 'en', autoCorrect: true });
 
@@ -35,8 +35,8 @@ Type: ${chapterData.translation_name}\n
 Number of verses: ${chapterData.verses.length}\n
 🔮 *Chapter Content (English):*\n
 ${translatedChapterEnglish.text}\n
-🔮 *Chapter Content (Hindi):*\n
-${translatedChapterHindi.text}`;
+🔮 *Chapter Content (Luo):*\n
+${translatedChapterLuo.text}`;
 
     m.reply(bibleChapter);
   } catch (error) {
