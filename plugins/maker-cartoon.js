@@ -120,7 +120,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 					m.chat,
 					response.download.full,
 					"",
-					"The operation was successful♥  >//<",
+					"The operation was successful♥ by *kanambo*",
 					m
 				);
 				let name = await conn.getName(m.sender),
