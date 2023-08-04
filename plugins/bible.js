@@ -24,7 +24,7 @@ let bibleChapterHandler = async (m, { conn }) => {
 
     let chapterData = await chapterRes.json();
 
-    let translatedChapterSwahili = await translate(chapterData.text, { to: 'swa', autoCorrect: true });
+    let translatedChapterSwahili = await translate(chapterData.text, { to: 'swahili', autoCorrect: true });
 
     let translatedChapterEnglish = await translate(chapterData.text, { to: 'en', autoCorrect: true });
 
