@@ -37,16 +37,12 @@ let quote = quotes[Math.floor(Math.random() * quotes.length)];
     
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
-_*Hello ${taguser} thank you for choosing KANAMBO-BOT made by Peter Kanambo*_
+_*Hello ${taguser} thank you for choosing KANAMBO-BOT*_
 
-🚀 *_Buckle up ${name}, ${greeting}! We're going on an adventure!_* 🚀
+🚀 *_Buckle up ${taguser}, ${greeting}! We're going on an adventure!_* 🚀
 
 📜 *_Quote of the day: ${quote}_* 📜
 
-┌─•✧𝑰𝑵𝑭𝑶 𝑼𝑺𝑬𝑹✧•─┐
-┊ 😈  𝙊𝙒𝙉𝙀𝙍 𝙉𝘼𝙈𝙀 :${author}
-└─── •✧✧• ────┘
-Today's Date and Time👇
 ┌──•✧𝑻𝒐𝒅𝒂𝒚✧•─────┐
 ┊ 📅   *𝘿𝘼𝙏𝙀:* ${date}
 ┊ ⏲️   *𝙏𝙄𝙈𝙀:* ${wib}
