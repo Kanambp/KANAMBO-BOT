@@ -80,6 +80,17 @@ KANAMBO-BOT- Simple Multi Device whatsapp bot.
     <h1 align="center">STEP 5</h1>
 </p>
 
+#### DEPLOY TO Replit 
+
+1. If You don't have an account in Replit. Create a account.
+    <br>
+<p align="center"><a href="https://replit.com/signup"> <img src="https://img.shields.io/badge/replit%20Account-blue?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
+
+2. Now Deploy
+    <br>
+<p align="center"><a href="https://repl.it/github/avi453/GURU-BOT"> <img src="https://img.shields.io/badge/replit%20Deploy-blue?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
+
+
  ## 🤩 Support
 THANK YOU GUYS I WILL ADD HOW TO DEPLOY ON KOYEB AND RAILWAY SOON WAIT FOR IT.....
 
