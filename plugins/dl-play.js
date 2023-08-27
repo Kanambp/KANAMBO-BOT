@@ -1,6 +1,6 @@
 import ytdl from 'ytdl-core';
 import yts from 'yt-search';
-import fs from 'fs';
+import fs from 'fs-extra';
 import { pipeline } from 'stream';
 import { promisify } from 'util';
 import os from 'os';
