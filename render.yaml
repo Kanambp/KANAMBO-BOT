@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: Naruto
+    name: KANAMBO-BOT
     env: docker
     region: Frankfurt
     plan: free
