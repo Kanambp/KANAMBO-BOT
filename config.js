@@ -8,21 +8,22 @@ import axios from 'axios'
 
 global.owner = [
   ['254114148625', 'KANAMBO', true],
-  ['']
+  ['254114148625', 'MR.P', true], 
+  [''] 
 ] //Number of owners
 
-global.mods = ['254114148625', '254114018035'] 
-global.prems = ['254114148625', '254114018035']
+//global.pairingNumber = "" //put your bot number here
 
-// global.ai = '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', // Get you Api-key from 'https://platform.openai.com/account/api-keys'
-// global.org = 'org-Wmzg6lcVPHGYXxmvPpM0CDsu',   
+global.mods = ['254114148625'] 
+global.prems = ['254114148625']
+global.allowed = ['917605902011', '32460248586', '19152999993']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
 global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
 global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
 global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
-global.lolkeysapi = ['SGWN']
+global.lolkeysapi = ['GataDios']
 
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -49,19 +50,21 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'KANAMBO-BOT'
+global.botname = 'ᴛʜᴇ kanambo-ʙᴏᴛ'
 global.premium = 'true'
 global.packname = 'KANAMBO┃ᴮᴼᵀ' 
-global.author = '@PETER MR.K' 
+global.author = '@KANAMBO.mr p' 
+global.menuvid = 'https://telegra.ph/file/085c4b1068f0f4f8db970.mp4'
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/\n' 
-global.dygp = 'https://chat.whatsapp.com/'
+global.dygp = 'https://chat.whatsapp.com/BibVE6tUICp3qOm1Ur8f'
 global.fgsc = 'https://github.com/Kanambp/KANAMBO-BOT' 
-global.fgyt = 'https://youtube.com/'
-global.fgpyp = 'https://youtube.com/'
-global.fglog = 'https://cdn.jsdelivr.net/gh/Kanambp/kanamb@main/kanambo.jpg' 
+global.fgyt = 'https://youtube.com'
+global.fgpyp = 'https://youtube.com'
+global.fglog = 'https://raw.githubusercontent.com/Guru322/api/Guru/guru.jpg' 
+global.thumb = fs.readFileSync('./Assets/Gurulogo.jpg')
 
 
-global.wait = '*⌛ _please wait..._*\n*▰▰▰▱▱▱▱▱*'
+global.wait = '*⌛ _Charging..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
