@@ -7,23 +7,18 @@
   "repository": "https://github.com/Kanambp/KANAMBO-BOT",
   "stack": "container",
   "env": {
-    "OPENAI_API_KEY": {
-      "description": "openai apikey",
-      "required": false,
-      "value": ""
-    },
-    "OPENAI_ORGANIZATION": {
-      "description": "openai organisation id",
-      "required": false,
-      "value": ""
-    },
-    "MONGO_DB": {
+    "DATABASE_URL": {
       "description": "your mongodb database url",
       "required": false,
       "value": ""
     },
-    "REMOVE_BG_API_KEY": {
-      "description": "removebg api key",
+    "SESSION_ID": {
+      "description": "your session id",
+      "required": true,
+      "value": ""
+    },
+     "REMOVEBG_KEY": {
+      "description": "your RemoveBg api key",
       "required": false,
       "value": ""
     }
@@ -31,6 +26,9 @@
     "buildpacks": [
     {
       "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
     },
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
