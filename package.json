@@ -1,5 +1,5 @@
 { 
-    "name": "KANAMBO",
+    "name": "ABHISHEK-SER",
     "version": "0.0.1",
     "description": "Customizable WhatsApp Bot",
     "main": "index.js",
@@ -19,38 +19,36 @@
         "whatsapp",
         "js-whatsapp",
         "whatsapp",
-        "guru-bot",
-        "GURU-bot-md",
+        "wa-bot",
+        "ABHISHEK-SER",
         "multi-device",
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/Kanambp/KANAMBO-BOT",
+    "homepage": "https://github.com/AbhishekSuresh2/ABHISHEK-SER",
     "author": {
-        "name": "KANAMBO"
+        "name": "ABHISHEK SURESH"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Guru322/GURU-BOT.git"
+        "url": "git+https://github.com/AbhishekSuresh2/ABHISHEK-SER.git"
     },
     "bugs": {
-        "url": "https://github.com/Guru322/GURU-BOT/issues"
+        "url": "https://github.com/AbhishekSuresh2/ABHISHEK-SER/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
         "@adiwajshing/baileys": "npm:@whiskeysockets/baileys@^6.0.1",
         "@adiwajshing/keyed-db": "^0.2.4",
-        "@bochilteam/scraper": "^4.2.3",
+        "@bochilteam/scraper": "^3.0.0",
         "awesome-phonenumber": "^3.4.0",
         "acrcloud": "^1.4.0",
         "@shineiichijo/marika": "^2.0.6",
-        "aptoide-scraper": "^1.0.1",
         "axios": "^0.24.0",
         "cfonts": "^3.1.1",
         "chalk": "^5.1.0",
         "cheerio": "^1.0.0-rc.12",
         "colors": "1.4.0",
-        "dotenv": "^16.1.4",
         "express": "^4.18.1",
         "fb-downloader-scrapper": "^1.0.1",
         "file-type": "^18.0.0",
@@ -68,7 +66,6 @@
         "node-fetch": "^3.2.10",
         "node-gtts": "^2.0.2",
         "node-webpmux": "^3.1.3",
-        "openai": "^3.2.1",
         "perf_hooks": "^0.0.1",
         "pino": "^8.6.1",
         "pdfkit": "^0.13.0",
